@@ -32,3 +32,5 @@ djangorestframework-simplejwt
 django-extensions
 django-cors-headers
 django-filter
+
+gunicorn==20.0.4
