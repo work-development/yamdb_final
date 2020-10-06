@@ -1,0 +1,38 @@
+version: '3.8'
+
+volumes:
+  postgres_data:
+
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./.env
+  web:
+    build: .
+    restart: always
+    command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
+    ports:
+      - "8000:8000" 
+    depends_on:
+      - db
+    env_file:
+      - ./.env
+      
+  nginx:
+    image: nginx
+    COPY:  D:\Dev\yamdb_final\api_yamdb\static  /var/lib/statics/
+    volumes:
+      -statics:/var/lib/static/
+      
+  nginx:
+    build: nginx
+    restart: always
+    depends_on:
+      - web
+    volumes: 
+      - ./static/:/etc/nginx/static
+    ports:
+      - "80:80"
