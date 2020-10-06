@@ -34,3 +34,4 @@ django-cors-headers
 django-filter
 
 gunicorn==20.0.4
+django-environ
