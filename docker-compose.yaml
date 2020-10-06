@@ -21,11 +21,6 @@ services:
     env_file:
       - ./.env
       
-  nginx:
-    image: nginx
-    COPY:  D:\Dev\yamdb_final\api_yamdb\static  /var/lib/statics/
-    volumes:
-      -statics:/var/lib/static/
       
   nginx:
     build: nginx
