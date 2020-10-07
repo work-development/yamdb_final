@@ -5,7 +5,7 @@ WORKDIR /code
 
 COPY requirements.txt /code
 
-COPY static /var/lib/
+COPY static /etc/nginx/static
 
 RUN pip install -r /code/requirements.txt
 
