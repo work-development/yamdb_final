@@ -5,7 +5,7 @@ WORKDIR /code
 
 COPY requirements.txt /code
 
-COPY static /etc/nginx/static
+COPY static /etc/nginx/
 
 RUN pip install -r /code/requirements.txt
 
