@@ -5,11 +5,11 @@ WORKDIR /code
 
 COPY requirements.txt /code
 
-COPY static /etc/nginx/
-
 RUN pip install -r /code/requirements.txt
 
 COPY . /code
+
+RUN python manage.py collectstatic --noinput
 
 WORKDIR /code
 
