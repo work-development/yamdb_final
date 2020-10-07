@@ -2,6 +2,7 @@ version: '3.8'
 
 volumes:
   postgres_data:
+  static:
 
 services:
   db:
@@ -31,3 +32,6 @@ services:
       - ./static/:/etc/nginx/static
     ports:
       - "80:80"
+      
+      
+      
