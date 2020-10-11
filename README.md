@@ -1,4 +1,4 @@
 # yamdb_final
 yamdb_final
 
-![name_worklow Actions Status](https://github.com/work-development/yamdb_final/workflows/yamdb/badge.svg)
+![yamdb_final workflow](https://github.com/work-development/yamdb_final/workflows/yamdb_final%20workflow/badge.svg)
