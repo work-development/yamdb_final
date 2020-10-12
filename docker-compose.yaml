@@ -17,7 +17,7 @@ services:
   web:
     build: .
     restart: always
-    command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn api_yamdb.wsgi:application --bind 8000
     ports:
       - "8000:8000" 
     depends_on:
