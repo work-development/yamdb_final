@@ -10,4 +10,4 @@ COPY . code
 
 WORKDIR code
 
-CMD gunicorn api_yamdb.wsgiapplication --bind 8000
+CMD gunicorn api_yamdb.wsgi:application --bind 8000
