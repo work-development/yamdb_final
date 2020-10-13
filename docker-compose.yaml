@@ -15,7 +15,7 @@ services:
       - ./.env
       
   web:
-    build: .
+    image: sergeidocker/yamdb_final
     restart: always
     command: gunicorn api_yamdb.wsgi:application --bind 8000
     ports:
