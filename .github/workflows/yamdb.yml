@@ -54,7 +54,7 @@ jobs:
           key: ${{ secrets.SSH_KEY}}
           script: |
             sudo docker pull sergeidocker/yamdb_final
-            sudo docker-compose restart
+            sudo docker-compose up
             
   send_message:
     runs-on: ubuntu-latest
