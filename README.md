@@ -33,4 +33,3 @@ sudo apt install docker.io
 3. Установите docker-compose;    
 4. Скопируйте подготовленные файлы docker-compose.yaml и nginx/default.conf из вашего проекта на сервер в home/<ваш_username>/docker-compose.yaml и home/<ваш_username>/nginx/default.conf соответственно.         
 5. Добавьте в Secrets GitHub Actions переменные окружения для работы базы данных;        
-6. 
