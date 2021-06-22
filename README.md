@@ -1,6 +1,6 @@
 # Continuous Integration и Continuous Deployment для проекта YaMDB
 
-![yamdb_final workflow](https://github.com/work-development/yamdb_final/workflows/yamdb_final_workflow/badge.svg)
+<!-- ![yamdb_final workflow](https://github.com/work-development/yamdb_final/workflows/yamdb_final_workflow/badge.svg)  -->
 
 ### В этом проекте настроены:   
 
